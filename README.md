@@ -116,11 +116,15 @@ AgentOS is designed to enterprise standards from day one:
 
 ## 📬 Work With BlubMa
 
-I build AI infrastructure that generates measurable business outcomes.
+I build AI infrastructure that generates measurable business outcomes. My core motto is **"Ich bin Multi"** (or **"Ich bin 2-3"**) — acting as a capacity multiplier by designing cognitive assistance systems that deliver immediate ROI.
 
-If you are evaluating AI strategy implementations, building a local-first agent stack, or looking for someone who has shipped this in production — let's talk.
+If you are:
+- Evaluating local-first agentic infrastructure (data sovereignty, DSGVO compliance).
+- Building automated sales-enablement and B2B hunting pipelines (+225% performance increase).
+- Implementing structured ITIL-compliant AI governance.
+- Looking for a strategic AI architect with a human-centric approach (Wirtschaftspsychologie) — let's connect.
 
-**→ [Reach out via LinkedIn](https://linkedin.com/in/benjaminmast)** or explore the project documentation in this repository.
+**→ [Reach out via LinkedIn](https://linkedin.com/in/blubma)** or explore the project documentation in this repository.
 
 **→ Business context:** [umsatz-ki-architekten.com](https://umsatz-ki-architekten.com)
 
