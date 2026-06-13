@@ -71,12 +71,12 @@ Every layer has a single, enforced purpose. No file lands in the wrong place. Ev
 - **Sales-Expert Agent:** Audits external-facing content to ensure it is technically sound and commercially sharp
 
 ### 📊 Real-Time Observability
-- Standalone dashboard [OSAIX-Gui](https://github.com/BlubMa/OSAIX-Gui) (Port 8505): live model status, Discord feed, semantic graph (Graphify), pending approvals
+- Standalone dashboard [OSAIRIX-AGENTOS-system-Gui-Privat](https://github.com/BlubMa/OSAIRIX-AGENTOS-system-Gui-Privat) (Port 8505): live model status, Discord feed, semantic graph (Graphify), pending approvals
 - Session journals auto-generated at every closure with token metrics, model usage, and open loop detection
 - Hardening tickets (`HT-*`) auto-created for any unresolved system anomalies
 
 ### 🔄 Fully Automated Backup Pipeline
-- One command syncs everything (AgentOS + OSAIX-Gui): GitHub + Dropbox (full 1:1 mirrors)
+- One command syncs everything (AgentOS + GUI): GitHub + Dropbox (full 1:1 mirrors)
 - Two-repository strategy: private core system vs. clean public documentation
 - Delta-based sync triggers — only push when change threshold is crossed
 
@@ -127,7 +127,7 @@ If you are:
 **→ [Reach out via LinkedIn](https://linkedin.com/in/benjaminmast)** or explore the project documentation in this repository.
 
 **→ Business context:** [umsatz-ki-architekten.com](https://umsatz-ki-architekten.com)
-**→ Public GitHub:** [github.com/BlubMa/OSAIX-Public](https://github.com/BlubMa/OSAIX-Public)
+**→ Public GitHub:** [github.com/BlubMa/OSAIRIX-AGENTOS-system-Public](https://github.com/BlubMa/OSAIRIX-AGENTOS-system-Public)
 
 ---
 
