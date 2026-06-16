@@ -76,7 +76,7 @@ Every layer has a single, enforced purpose. No file lands in the wrong place. Ev
 - Hardening tickets (`HT-*`) auto-created for any unresolved system anomalies
 
 ### 🔄 Fully Automated Backup Pipeline
-- One command syncs everything (AgentOS + GUI): GitHub + Dropbox (full 1:1 mirrors)
+- One command syncs everything (AgentOS + GUI): GitHub + OneDrive (full 1:1 mirrors)
 - Two-repository strategy: private core system vs. clean public documentation
 - Delta-based sync triggers — only push when change threshold is crossed
 
