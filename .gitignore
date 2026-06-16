@@ -1,0 +1,10 @@
+# Whitelist-pattern for the public repository.
+# We only track README.md and .gitignore to prevent accidental commits of system files,
+# code scripts, logs, databases, local environment configs, or personal notes.
+
+# Ignore everything by default
+*
+
+# Exceptions: Do not ignore README.md and .gitignore
+!README.md
+!.gitignore
