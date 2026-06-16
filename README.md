@@ -71,14 +71,31 @@ Every layer has a single, enforced purpose. No file lands in the wrong place. Ev
 - **Sales-Expert Agent:** Audits external-facing content to ensure it is technically sound and commercially sharp
 
 ### 📊 Real-Time Observability
-- Standalone dashboard [OSAIRIX-AGENTOS-system-Gui-Privat](https://github.com/BlubMa/OSAIRIX-AGENTOS-system-Gui-Privat) (Port 8505): live model status, Discord feed, semantic graph (Graphify), pending approvals
-- Session journals auto-generated at every closure with token metrics, model usage, and open loop detection
-- Hardening tickets (`HT-*`) auto-created for any unresolved system anomalies
+- Standalone Vite/React dashboard: Live model status, Discord feed, semantic graph (Graphify), and pending approval queues.
+- Session journals auto-generated at every closure with token metrics, model usage, and open loop detection.
+- Hardening tickets (`HT-*`) auto-created for any unresolved system anomalies.
 
-### 🔄 Fully Automated Backup Pipeline
-- One command syncs everything (AgentOS + GUI): GitHub + OneDrive (full 1:1 mirrors)
-- Two-repository strategy: private core system vs. clean public documentation
-- Delta-based sync triggers — only push when change threshold is crossed
+### 🔄 Decoupled Three-Repository System (Architecture Blueprint)
+
+To maintain absolute data separation, service isolation, and code clarity, AgentOS is engineered as a decoupled, multi-repository ecosystem. The code and configuration are divided into three specialized private repositories (physically isolated, functionally mapped, and securely managed):
+
+1. 📂 **Core System & Database Backend (`OSAIRIX-AGENTOS-system-Privat`)**
+   - **Role:** Serves as the central operating system and cognitive coordinator.
+   - **Assets:** Implements the 8-layer cognitive stack (Inbox, Core, Data, Agents, Logs, SOPs, Outputs, Harness, Archive).
+   - **Key Tech:** Single-Writer transaction engine (SQLite queue), Resource Management Module (RMM) for local-first model routing (Apple M3 GPU + LiteRT/Ollama), and the local command center.
+   - **Security:** Standardized AI-native pre-commit hooks to block secrets/credential leaks and enforce formatting.
+
+2. 📊 **Cockpit Visualizer & Dashboard GUI (`OSAIRIX-AGENTOS-system-Gui-Privat`)**
+   - **Role:** Houses the system's graphical management panel and visual analytics.
+   - **Assets:** A custom Vite & React single-page application.
+   - **Key Tech:** Connects locally to the backend server via a secure Server-Sent Events (SSE) log stream, presenting real-time agent telemetry, model cost metrics, pending human-in-the-loop approvals, and interactive semantic graphs.
+
+3. 💬 **Independent Messaging & Communication Hub (`OSAIX-Kommunikation-Privat`)**
+   - **Role:** Handles external messaging tunnels, chat transport routing, and gateway bridges.
+   - **Assets:** Host bridges, Discord bot containers, webhooks, and inbox parsers.
+   - **Key Tech:** Decouples gateway connections from the core backend. If chat platforms change APIs, rate-limit, or fail, the core system remains 100% operational, isolating external network vulnerabilities.
+
+*Synchronization & Backup Pipeline:* All changes across these repositories are pulled, validated, and pushed concurrently using our unified one-click sync process, which automatically tags commits with distinct AI/Human identity signatures for full auditability while creating a 1:1 backup mirror on secure cloud storage.
 
 ---
 
